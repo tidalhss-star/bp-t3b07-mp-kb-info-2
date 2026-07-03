@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 노래방 정보 | 당신의 취향을 저격할 단 하나의 공간</title>
+    <meta name="description" content="마포에서 가장 독창적인 노래방을 찾는다면? 우리는 평범함을 거부한다. 감각적인 사운드, 금빛 조명, 그리고 당신의 목소리를 위한 완벽한 무대. 지금 전화하세요.">
+    <meta name="keywords" content="마포 노래방, 마포 가성비 노래방, 마포 코인노래방, 마포 노래방 추천, 홍대 노래방, 마포구 노래방 정보, 노래방 가격, 마포 데이트 노래방, 마포 혼노래방">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <link rel="canonical" href="https://t3b07-mp-kb-info-2.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="마포 노래방 정보 | 당신의 취향을 저격할 단 하나의 공간">
+    <style>
+        /* === RESET & BASE === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: #d4af37;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #d4af37;
+        }
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+            color: #f5f5f5;
+        }
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            color: #b0b0b0;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #f5c842;
+        }
+        /* === DROP CAPS === */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 0.8;
+            padding-right: 0.5rem;
+            font-weight: 700;
+            color: #d4af37;
+        }
+        /* === LAYOUT === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        main {
+            padding: 4rem 0;
+        }
+        /* === NAV === */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid #d4af37;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        nav ul li a {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #f5f5f5;
+        }
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger-menu span {
+            width: 28px;
+            height: 2px;
+            background: #d4af37;
+            transition: all 0.3s ease;
+        }
+        .tel-link {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: #d4af37;
+            color: #0a0a0a;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .tel-link:hover {
+            background: #f5c842;
+            color: #0a0a0a;
+        }
+        /* === HERO === */
+        .hero {
+            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        /* === CARDS === */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+        .card h3 {
+            color: #d4af37;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            font-size: 1rem;
+        }
+        /* === FAQ === */
+        .faq-list {
+            margin: 3rem 0;
+        }
+        .faq-item {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .faq-item h4 {
+            font-size: 1.25rem;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        .faq-item p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.98);
+                padding: 1rem 0;
+                text-align: center;
+                gap: 1rem;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .tel-link {
+                display: none;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* === FOOTER === */
+        footer {
+            background: #111;
+            padding: 2rem 0;
+            border-top: 1px solid #d4af37;
+            text-align: center;
+        }
+        footer p {
+            font-size: 0.875rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="hamburger-menu" onclick="this.nextElementSibling.classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="info.html">정보</a></li>
+                <li><a href="contact.html">연락처</a></li>
+            </ul>
+            <a href="tel:02-123-4567" class="tel-link">전화걸기</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>마포 노래방 정보</h1>
+            <p class="drop-cap">평범한 노래방은 가라. 마포에서 가장 독창적인 공간, 당신의 목소리를 위한 무대가 여기 있다.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <h2>왜 우리여야 하는가?</h2>
+            <p>마포에는 수많은 노래방이 넘쳐난다. 하지만 진짜를 찾는 건 쉽지 않다. 우리는 당신이 아는 모든 노래방을 뒤집어엎을 준비가 되어 있다. 금빛 조명 아래서 울려 퍼지는 완벽한 사운드, 그리고 당신의 존재감. 여기는 그냥 노래방이 아니다. 여기는 당신의 무대다.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>사운드 시스템</h3>
+                    <p>전문가가 설계한 7.1채널 서라운드 사운드. 당신의 목소리가 마포 전체를 울릴 것이다. 평범한 마이크는 없다. 여기서는 당신이 스타다.</p>
+                </div>
+                <div class="card">
+                    <h3>프리미엄 공간</h3>
+                    <p>넓은 룸, 금빛 인테리어, 감각적인 조명. 데이트? 혼놀? 단체? 모두를 위한 공간. 마포에서 가장 인스타그래머블한 노래방을 자랑한다.</p>
+                </div>
+                <div class="card">
+                    <h3>가성비 파괴</h3>
+                    <p>가격? 걱정 마라. 최고의 경험을 합리적인 가격에 제공한다. 시간당 10,000원부터. 마포 가성비 노래방의 끝판왕.</p>
+                </div>
+            </div>
+
+            <h2>마포 노래방, 이렇게 이용하라</h2>
+            <p>마포에서 노래방을 찾는다면, 우리가 정답이다. 홍대입구역 3번 출구에서 도보 3분. 주차 가능. 24시간 운영. 당신이 원할 때 언제든지 와서 목청껏 노래를 질러라.</p>
+
+            <div class="faq-list">
+                <h2>자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <h4>가격이 어떻게 되나요?</h4>
+                    <p>시간당 10,000원부터 시작합니다. 주말 및 심야 시간대는 추가 요금이 있을 수 있습니다. 단체 할인, 생일 이벤트 등 다양한 프로모션을 진행 중입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>혼자 가도 괜찮나요?</h4>
+                    <p>당연하다. 혼노래방 전용 룸이 따로 있다. 1인용 마이크, 1인용 조명. 당신만의 무대를 즐겨라. 마포 혼노래방의 최적지.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>데이트 코스로 괜찮나요?</h4>
+                    <p>완벽하다. 분위기 있는 금빛 조명, 감각적인 인테리어, 그리고 커플석. 마포 데이트 노래방으로 더 이상 찾을 필요 없다. 상대방의 마음을 사로잡아라.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>주차는 가능한가요?</h4>
+                    <p>건물 지하 1층에 전용 주차장이 있다. 2시간 무료 주차 가능. 차량으로 오는 게 가장 편하다. 마포구 노래방 중 주차가 가장 넉넉하다.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>코인노래방인가요?</h4>
+                    <p>코인노래방? 그건 옛말이다. 여기는 프리미엄 노래방. 시간제로 운영되며, 무제한 곡 선택이 가능하다. 마포 코인노래방보다 훨씬 낫다.</p>
+                </div>
+            </div>
+
+            <h2>마포에서 가장 핫한 노래방</h2>
+            <p>홍대 노래방, 마포 노래방 추천 리스트에 항상 오르는 곳. 우리는 당신의 취향을 저격한다. 인디 밴드부터 최신 가요까지, 20만 곡 이상의 레퍼토리. 당신이 부르고 싶은 노래가 없다면, 없다고 말해라. 바로 업데이트해준다.</p>
+            <p>지금 전화하세요. 예약은 필수다. 특히 주말에는 자리가 없다. 02-123-4567. 당신의 목소리를 기다린다.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 마포 노래방 정보. 모든 권리 보유. 평범함은 거부한다.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.nextElementSibling.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
