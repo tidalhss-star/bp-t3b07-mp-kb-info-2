@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://shirtslab-mapo-pro.xyz/sitemap.xml
+Sitemap: https://shirtslab-mapo-pro.xyz/sitemap-pages.xml
 Sitemap: https://shirtslab-mapo-pro.xyz/sitemap-index.xml
