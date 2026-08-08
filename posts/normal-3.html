@@ -1,180 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
-  <link rel="canonical" href="https://shirtslab-mapo-pro.xyz/posts/normal-3.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마포 노래방 정보</title>
+<link rel="canonical" href="https://shirtslab-mapo-pro.xyz/posts/normal-3.html">
+  <meta name="bpaas-link-purpose" content="link-juice">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:url" content="https://shirtslab-mapo-pro.xyz/posts/normal-3.html">
+  <meta property="og:title" content="마포 노래방 정보">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="../index.html">HOME</a> | <a href="../sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h1>
-      <div class="content">
-        완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자아냅니다. 모든 요소가 완벽하게 수학적 질서를 이룬 대칭 프레임 안에서 관객은 보이지 않는 절대적 통제력을 체감하게 됩니다.
-      </div>
-      
-      
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="../sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+<h1>마포 노래방 정보</h1>
+<p>마포 지역의 노래방은 다양하게 위치해 있으며, 각 업소는 내부 시설과 운영 방식에서 차이를 보입니다. 노래방을 알아볼 때 가장 먼저 확인해야 할 것은 영업 기간과 이용 시간입니다. 마포 일대의 업소들은 대체로 저녁 시간대에 이용이 집중되므로, 방문 전 안내판을 통해 현재 운영 여부를 먼저 파악하는 것이 좋습니다.</p>
+<p>노래방 이용 시 기본적으로 알아두어야 할 사항 중 하나는 예약 여부입니다. 일부 업소는 전화나 온라인으로 사전 예약을 받고 있으며, 다른 곳은 방문 순서대로 입장을 진행하기도 합니다. 마포 지역의 경우 수요가 많은 주말이나 공휴일에는 예약 여부 확인이 특히 중요합니다. 관련 정보는 <a class="anchor-link" href="https://paper.nrb-hwagok.xyz/" data-bpaas-link-target="t2-paper-nrb-hwagok">유흥 이용 가이드 리스트</a> 에서 확인할 수 있습니다.</p>
+<p>내부 환경은 업소마다大きく 달라질 수 있습니다. 일부 노래방은 넓은 좌식 공간과 함께 별도의 식당 코너를 갖추고 있는 반면, 다른 곳은 순수 노래 연습에 특화된 형태로 운영되기도 합니다. 시설 상태를 사전에 확인할 수 있는 방법이 있는 경우 이를 활용하면 보다 적합한 공간을 선택하는 데 도움이 됩니다.</p>
+<p>노래방 이용 규칙 역시 업소별로 다를 수 있습니다. 일부 곳에서는 음식持ち込み를 허용하고, 다른 곳에서는 허용하지 않는 경우가 있습니다. 이러한 안내는 현장 입구나 안내문에 명시되어 있으므로, 방문 시 반드시 확인하고 절차를 따르는 것이 바람직합니다. 지역 내 노래방 정보를 종합적으로 비교할 때에도 같은 원칙으로 접근하면 됩니다.</p>
 </body>
 </html>
