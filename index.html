@@ -468,8 +468,14 @@
  }
  }
  </style>
-</head>
-<body>
+<style data-post-index-reader-style="true">
+div[data-post-index-navigation="true"] { display:block !important; visibility:visible !important; position:fixed; right:16px; bottom:16px; z-index:1001; max-width:calc(100% - 32px); padding:0; text-align:right; }
+div[data-post-index-navigation="true"] a { display:inline-flex !important; visibility:visible !important; align-items:center; padding:8px 14px; border:1px solid currentColor; border-radius:6px; background:Canvas; color:CanvasText; text-decoration:none; }
+nav.pager, nav.post-pager, nav[data-site-documents="true"] { display:flex !important; visibility:visible !important; flex-wrap:wrap; gap:12px; padding:16px 0; }
+nav.pager a, nav.post-pager a, nav[data-site-documents="true"] a { display:inline-flex !important; visibility:visible !important; align-items:center; padding:6px 10px; color:inherit; }
+:where(main, article, .content) :where(img), :where(body) > :where(img) { max-width:100%; height:auto; }
+</style></head>
+<body><div data-post-index-navigation="true" aria-label="글 목록 안내"><a href="posts.html">글 목록</a></div>
 
 <header>
  <div class="header-inner">
@@ -478,7 +484,7 @@
  <a href="#about">소개</a>
  <a href="#reviews">리뷰</a>
  <a href="#contact" class="nav-cta">문의</a>
- <a href="posts.html">글 목록</a></nav>
+ </nav>
  <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
  
  
